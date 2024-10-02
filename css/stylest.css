@@ -45,9 +45,8 @@ body {
     color: white;
     display: flex;
     justify-content: space-between;
-    padding-right: 32px;
-    padding-left: 16px;
-    padding: 32px; 
+    margin-left: 0;
+    margin-right: 0;
     margin-bottom: 20px;
   }
 
@@ -104,20 +103,16 @@ tbody .even {
 
 
 .sectionURL {
-    padding-left: 16px;
     margin-bottom: 20px;
     background-color: rgb(37, 116, 190);
 }
 
 .sectionForms {
-    padding-left: 16px;
     margin-bottom: 20px;
     background-color: rgb(190, 37, 144);
 }
 
 footer {
-    padding-left: 16px;
     margin-bottom: 20px;
     background-color: rgb(156, 156, 156);
-    padding: 16px; 
 }
