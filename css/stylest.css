@@ -34,7 +34,9 @@ body {
         margin: 0 auto;
     }
     .sectionForms {
-        max-width: 960px;
+        display: flex;
+        flex-direction: column;
+        width: 960px;
         margin: 0 auto;
         order: 4;
     }
