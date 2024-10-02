@@ -57,6 +57,9 @@ body {
 
   }
 
+header a {
+    padding-right: 16px;
+}
 .logo img {
     max-width: 48px;
     height: auto;
@@ -72,7 +75,7 @@ body {
 .nav-menu nav {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+   
 }
  /* настройка таблицы */
 .sectionTable {
