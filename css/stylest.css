@@ -44,6 +44,7 @@ body {
 
     /* Media Queries для планшетов и компьютеров*/
  header {
+    
     flex-direction: row;
     background: rgba(0, 0, 0, 0.1);
     color: white;
@@ -52,6 +53,8 @@ body {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 20px;
+    padding-left: 16px;
+
   }
 
 .logo img {
@@ -60,6 +63,7 @@ body {
 }
  /* настройка нав меню ссылок*/
 .nav-menu {
+    padding-left: 16px;
     background-color: aqua;
     margin-bottom: 20px;
     width: 100%
@@ -75,8 +79,7 @@ body {
     margin-bottom: 20px;
     background-color: rgb(190, 129, 37);
     padding-left: 16px;
-    padding-right: 16px;
-    width: 100%
+    width: 90%
 }
   /* настройка таблицы, цвета строк,столбиков,линий*/
 thead th {
@@ -107,16 +110,19 @@ tbody .even {
 
 
 .sectionURL {
+    padding-left: 16px;
     margin-bottom: 20px;
     background-color: rgb(37, 116, 190);
 }
 
 .sectionForms {
+    padding-left: 16px;
     margin-bottom: 20px;
     background-color: rgb(190, 37, 144);
 }
 
 footer {
+    padding-left: 16px;
     margin-bottom: 20px;
     background-color: rgb(156, 156, 156);
 }
