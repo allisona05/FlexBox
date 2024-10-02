@@ -1,0 +1,117 @@
+/* Основные стили для мобильных устройств (Mobile First) */
+body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Media Queries для планшетов и компьютеров*/
+  @media (min-width: 768px) {
+    header {
+        order: 0;
+    }
+    .nav-menu { 
+        order: 2;
+        max-width: 960px;
+       margin: 0 auto;
+     
+    }
+    .sectionTable {
+        order: 1;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    .sectionURL {
+        order: 3;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    .sectionForms {
+        max-width: 960px;
+        margin: 0 auto;
+        order: 4;
+    }
+    footer {
+        order: 5;
+    }
+  }
+
+    /* Media Queries для планшетов и компьютеров*/
+ header {
+    flex-direction: row;
+    background: rgba(0, 0, 0, 0.1);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 32px;
+    padding-left: 16px;
+    padding: 32px; 
+    margin-bottom: 20px;
+  }
+
+ /* настройка нав меню ссылок*/
+.nav-menu {
+    background-color: aqua;
+    margin-bottom: 20px;
+    width: 100%
+}
+ /* настройка нав меню ссылок*/
+.nav-menu nav {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+ /* настройка таблицы */
+.sectionTable {
+    margin-bottom: 20px;
+    background-color: rgb(190, 129, 37);
+    padding-left: 16px;
+    width: 100%
+}
+  /* настройка таблицы, цвета строк,столбиков,линий*/
+thead th {
+    background-color: #3a5041;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    border: 2px solid #3686cc;
+}
+ /* настройка таблицы, цвета строк,столбиков,линий*/
+thead tr {
+    background-color: #3686cc;
+
+}
+ /* настройка таблицы, цвета строк,столбиков,линий*/
+tbody td {
+    padding: 10px;
+    border: 2px solid #3686cc;
+}
+ /* настройка таблицы, цвета строк,столбиков,линий*/
+tbody .odd {
+    background-color: #f9f9f9;
+}
+ /* настройка таблицы, цвета строк,столбиков,линий*/
+tbody .even {
+    background-color: #e9e9e9;
+}
+
+
+.sectionURL {
+    padding-left: 16px;
+    margin-bottom: 20px;
+    background-color: rgb(37, 116, 190);
+}
+
+.sectionForms {
+    padding-left: 16px;
+    margin-bottom: 20px;
+    background-color: rgb(190, 37, 144);
+}
+
+footer {
+    padding-left: 16px;
+    margin-bottom: 20px;
+    background-color: rgb(156, 156, 156);
+    padding: 16px; 
+}
