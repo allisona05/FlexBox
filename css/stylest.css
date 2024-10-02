@@ -67,7 +67,7 @@ header a {
 }
  /* настройка нав меню ссылок*/
 .nav-menu {
-    padding-left: 16px;
+  
     background-color: aqua;
     margin-bottom: 20px;
     width: 100%
@@ -82,7 +82,7 @@ header a {
 .sectionTable {
     margin-bottom: 20px;
     background-color: rgb(190, 129, 37);
-    padding-left: 16px;
+  
     width: 100%
 }
   /* настройка таблицы, цвета строк,столбиков,линий*/
