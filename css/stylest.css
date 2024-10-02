@@ -6,9 +6,6 @@ body {
     flex-direction: column;
   }
   
-  * {
-    box-sizing: border-box;
-}
   /* Media Queries для планшетов и компьютеров*/
   @media (min-width: 768px) {
     header {
@@ -75,6 +72,7 @@ body {
     margin-bottom: 20px;
     background-color: rgb(190, 129, 37);
     padding-left: 16px;
+    padding-right: 16px;
     width: 100%
 }
   /* настройка таблицы, цвета строк,столбиков,линий*/
