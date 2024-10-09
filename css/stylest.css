@@ -6,7 +6,10 @@ body {
     flex-direction: column;
   }
   
-
+  .logo img {
+    width: 48px;
+    height: 48px;
+}
  header {
     flex-direction: row;
     background: rgb(83, 82, 82);
