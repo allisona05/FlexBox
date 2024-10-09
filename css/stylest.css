@@ -4,72 +4,21 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
   }
   
-  /* Media Queries для планшетов и компьютеров*/
-  @media (min-width: 768px) {
-    header {
-        order: 0;
-    }
-    
-    .nav-menu { 
-        order: 2;
-        max-width: 960px;
-       margin: 0 auto;
-     
-    }
-    .sectionTable {
-        order: 1;
-        max-width: 960px;
-        margin: 0 auto;
-    }
-    .sectionURL {
-        order: 3;
-        max-width: 960px;
-        margin: 0 auto;
-    }
-    .sectionForms {
-        display: flex;
-        flex-direction: column;
-        width: 960px;
-        margin: 0 auto;
-        order: 4;
-    }
-    footer {
-        order: 5;
-    }
-  }
 
-    /* Media Queries для планшетов и компьютеров*/
  header {
-    
     flex-direction: row;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgb(83, 82, 82);
     color: white;
     display: flex;
     justify-content: space-between;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 20px;
-    padding-left: 16px;
-
+    padding: 32px; 
+    position: relative;
   }
 
-header a {
-    padding-right: 16px;
-}
-.logo img {
-    max-width: 48px;
-    height: auto;
-}
  /* настройка нав меню ссылок*/
 .nav-menu {
-  
     background-color: aqua;
     margin-bottom: 20px;
     width: 100%
@@ -78,13 +27,13 @@ header a {
 .nav-menu nav {
     display: flex;
     flex-direction: column;
-   
+    padding: 20px;
 }
  /* настройка таблицы */
 .sectionTable {
     margin-bottom: 20px;
     background-color: rgb(190, 129, 37);
-  
+    padding-left: 16px;
     width: 100%
 }
   /* настройка таблицы, цвета строк,столбиков,линий*/
@@ -131,4 +80,61 @@ footer {
     padding-left: 16px;
     margin-bottom: 20px;
     background-color: rgb(156, 156, 156);
+    padding: 16px; 
 }
+
+
+  /* Media Queries для планшетов и компьютеров*/
+  @media (min-width: 768px) {
+    header {
+        order: 0;
+        justify-content: left;
+    }
+    
+    .logo img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .nav-menu {
+       position: absolute;
+        top: 0; /* Отступ сверху */
+        right: 32px; /* Прижимаем к правому краю */
+        margin: 8px; /* Добавляем отступы */
+        width: 20%;
+    }
+    
+    .nav-menu nav {
+        display: flex; /* Устанавливаем горизонтальное расположение элементов */
+        flex-direction: row;
+        background: rgb(83, 82, 82);
+    }
+    .nav-menu nav a {
+        display: inline-block; /* Элементы располагаются в ряд */
+        margin-right: 24px; /* Отступ между элементами, можно настроить */
+        color: white; /* Цвет текста */
+        text-decoration: none; /* Убирает подчеркивание ссылок */
+      
+    }
+    
+    .sectionTable {
+        order: 3;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    .sectionURL {
+        order: 2;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    .sectionForms {
+        display: flex;
+        flex-direction: column;
+        width: 960px;
+        margin: 0 auto;
+        order: 4;
+    }
+    footer {
+        order: 5;
+    }
+  }
